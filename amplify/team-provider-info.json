@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-justchat-dev-224515-authRole",
+      "UnauthRoleArn": "arn:aws:iam::309151950369:role/amplify-justchat-dev-224515-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::309151950369:role/amplify-justchat-dev-224515-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-justchat-dev-224515-deployment",
+      "UnauthRoleName": "amplify-justchat-dev-224515-unauthRole",
+      "StackName": "amplify-justchat-dev-224515",
+      "StackId": "arn:aws:cloudformation:eu-central-1:309151950369:stack/amplify-justchat-dev-224515/52013880-82fa-11ed-8afc-06fa09298b30",
+      "AmplifyAppId": "d5z93k6ceu3d8"
+    },
+    "categories": {
+      "auth": {
+        "justchat13054350": {}
+      },
+      "api": {
+        "justchat": {}
+      }
+    }
+  }
+}
