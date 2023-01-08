@@ -3,7 +3,7 @@ import Colors from "../../constants/Colors";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.light.tint,
+    backgroundColor: Colors.screen.mymessagebackground,
     width: 50,
     height: 50,
     borderRadius: 25,
