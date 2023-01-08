@@ -5,7 +5,9 @@ import { View } from '../components/Themed';
 import ContactListItem from '../components/ContactListItem';
 
 import { listUsers }  from '../src/graphql/queries';
+
 import {useEffect, useState} from "react";
+import Colors from '../constants/Colors';
 
 export default function ContactsScreen() {
 
@@ -41,6 +43,8 @@ export default function ContactsScreen() {
 
 const styles = StyleSheet.create({
   container: {
+    text: '#fff',
+    backgroundColor: Colors.screen.background,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',

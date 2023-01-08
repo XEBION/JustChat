@@ -8,11 +8,13 @@ export type AmplifyDependentResourcesAttributes = {
             "UserPoolName": "string",
             "AppClientIDWeb": "string",
             "AppClientID": "string"
+        },
+        "userPoolGroups": {
+            "JustpoolGroupRole": "string"
         }
     },
     "api": {
-        "justchat": {
-            "GraphQLAPIKeyOutput": "string",
+        "justchatdev": {
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }

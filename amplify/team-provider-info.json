@@ -13,10 +13,11 @@
     },
     "categories": {
       "auth": {
-        "justchat13054350": {}
+        "justchat13054350": {},
+        "userPoolGroups": {}
       },
       "api": {
-        "justchat": {}
+        "justchatdev": {}
       }
     }
   }

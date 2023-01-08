@@ -20,12 +20,13 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
   username: {
+    color: '#007acc',
     fontWeight: 'bold',
     fontSize: 16,
   },
   status: {
     fontSize: 16,
-    color: 'grey',
+    color: '#fff',
   },
 });
 

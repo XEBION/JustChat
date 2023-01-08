@@ -23,10 +23,26 @@
           "EMAIL"
         ]
       }
+    },
+    "userPoolGroups": {
+      "service": "Cognito-UserPool-Groups",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "justchat13054350",
+          "attributes": [
+            "UserPoolId",
+            "AppClientIDWeb",
+            "AppClientID",
+            "IdentityPoolId"
+          ]
+        }
+      ]
     }
   },
   "api": {
-    "justchat": {
+    "justchatdev": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
@@ -46,16 +62,7 @@
               "userPoolId": "authjustchat13054350"
             }
           },
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "API_KEY",
-              "apiKeyConfig": {
-                "apiKeyExpirationDays": 7,
-                "apiKeyExpirationDate": "2022-12-30T21:21:16.670Z",
-                "description": ""
-              }
-            }
-          ]
+          "additionalAuthenticationProviders": []
         }
       }
     }

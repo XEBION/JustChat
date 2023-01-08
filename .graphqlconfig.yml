@@ -1,5 +1,5 @@
 projects:
-  justchat:
+  justchatdev:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.ts

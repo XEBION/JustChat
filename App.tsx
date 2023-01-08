@@ -17,6 +17,7 @@ import { getUser } from './src/graphql/queries';
 import { createUser } from './src/graphql/mutations';
 
 
+
 Amplify.configure(awsconfig)
 
 const randomImages = [
