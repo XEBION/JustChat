@@ -17,7 +17,7 @@ const ChatMessage = (props: ChatMessageProps) => {
   const { message, myId } = props;
 
   const isMyMessage = () => {
-    return message.user.id == 'u1';
+    return message.user.id == myId;
   }
 
   return (
