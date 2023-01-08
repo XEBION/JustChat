@@ -17,10 +17,12 @@ import { onCreateMessage } from '../src/graphql/subscriptions';
 
 
 const ChatRoomScreen = () => { 
+    
   const [messages, setMessages] = useState([]);
   const [myId, setMyId] = useState(null);
 
   const route = useRoute();
+  console.log(route.params.id)
 
   const fetchMessages = async () => {
     const messagesData = await API.graphql(
@@ -76,7 +78,7 @@ const ChatRoomScreen = () => {
             
         <FlatList
             data={messages}
-            renderItem={({ item }) => <ChatMessage message={item} />}
+            renderItem={({ item }) => <ChatMessage myId={myId} message={item} />}
             inverted
         ></FlatList> 
         <InputBox chatRoomID={route.params.id}/>
