@@ -9,7 +9,7 @@ const NewMessageButton = () => {
   const navigation = useNavigation();
 
   const onPress = () => {
-    navigation.navigate('Contacts');
+    navigation.navigate('Kişiler');
   }
 
   return (

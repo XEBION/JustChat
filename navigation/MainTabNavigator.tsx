@@ -19,7 +19,7 @@ export default function MainTabNavigator() {
   
   return (
     <MainTab.Navigator
-      initialRouteName="Chats"
+      initialRouteName="Sohbet"
       tabBarOptions={{
         tabBarActiveTintColor: Colors.dark.tint,
         style: {
@@ -38,7 +38,7 @@ export default function MainTabNavigator() {
         showIcon: true,
       }}>
         <MainTab.Screen
-        name="Camera"
+        name="Kamera"
         component={TabTwoScreen}
         options={{
           tabBarIcon: ({ color }) => <Fontisto name="camera" color={color} size={18} />,
@@ -47,16 +47,16 @@ export default function MainTabNavigator() {
         }}
       />
       <MainTab.Screen
-        name="Chats"
+        name="Sohbet"
         component={ChatsScreen}
       />
       <MainTab.Screen
-        name="Status"
+        name="Durum"
         component={TabTwoScreen}
         
       />
       <MainTab.Screen
-        name="Calls"
+        name="Gruplar"
         component={TabTwoScreen}
         
       />

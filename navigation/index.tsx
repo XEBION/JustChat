@@ -92,7 +92,7 @@ function RootNavigator() {
       })}
       />
       <Stack.Screen
-        name="Contacts"
+        name="Kişiler"
         component={ContactsScreen}
       />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
