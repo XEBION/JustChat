@@ -14,6 +14,7 @@ import ChatListItem from '../components/ChatListItem';
 import chatRooms from '../data/ChatRooms';
 import Colors from '../constants/Colors';
 import NewMessageButton from '../components/NewMessageButton';
+import ChatRoomScreen from './ChatRoomScreen';
 
 import { getUser } from './queries';
 
@@ -42,11 +43,13 @@ export default function ChatsScreen() {
     fetchChatRooms();
   }, []);
 
+
+
   return (
     <View style={styles.container}>
       <FlatList 
       data={chatRooms} 
-      renderItem={({ item }) => <ChatListItem chatRoom={item} />}
+      renderItem={({ item }) => <ChatListItem chatRoom={item.chatRoom} />}
       keyExtractor={(item) => item.id}
       />
       <NewMessageButton />

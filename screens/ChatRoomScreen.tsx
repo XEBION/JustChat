@@ -12,7 +12,7 @@ import {
   graphqlOperation,
   Auth,
 } from 'aws-amplify';
-import { messagesByChatRoom } from "../src/graphql/queries";
+import { listMessages, messagesByChatRoom } from "../src/graphql/queries";
 import { onCreateMessage } from '../src/graphql/subscriptions';
 
 
@@ -30,7 +30,7 @@ const ChatRoomScreen = () => {
         messagesByChatRoom, {
           chatRoomID: route.params.id,
           sortDirection: "DESC",
-        }
+        },
       )
     )
 

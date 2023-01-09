@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     },
     time: {
         fontSize: 14,
-        marginRight: 82,
+        marginRight: 114,
         color: Colors.screen.time,
     },
 });
